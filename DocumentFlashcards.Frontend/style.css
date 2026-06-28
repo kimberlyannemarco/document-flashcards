@@ -1,0 +1,218 @@
+/* Responsive base font */
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Button / focus style */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: #F5EFE6;
+  color: #3A3A3A;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #3A3A3A;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 20px 0 8px 0;
+  color: #3A3A3A;
+}
+
+/* Generic app container */
+.app {
+  max-width: 800px;
+  margin: 40px auto 70px auto;
+  padding: 24px 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #dee2e6;
+}
+
+/* Upload section */
+.upload-section {
+  margin-bottom: 24px;
+}
+
+.upload-section input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px dashed #d6a0a0;
+  border-radius: 8px;
+  background: #fdf1f1;
+  color: #994455;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.upload-section input[type="file"]::file-selector-button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  background: #f1caa2;
+  color: #3A3A3A;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.upload-section button {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  background: #f1caa2;
+  color: #3A3A3A;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.upload-section button:hover {
+  background: #e8b992;
+}
+
+.status {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* Cards list */
+.cards-section {
+  margin: 24px 0;
+}
+
+.card-item {
+  padding: 12px 14px;
+  margin: 6px 0;
+  background: #f8f9ff;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.card-item p {
+  margin: 2px 0;
+  font-weight: 500;
+  color: #3A3A3A;
+}
+
+/* Review / flashcard study mode (tighter border, nicer buttons) */
+.review-section {
+  margin-top: 24px;
+}
+
+.card {
+  width: 100%;
+  aspect-ratio: 2 / .5;
+  border: 1px solid #e0e0e0;    /* thinner, lighter border */
+  border-radius: 12px;
+  margin: 10px 0;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);  /* more subtle */
+}
+
+.card-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  inset: 12px 12px 12px 12px;      /* tighter padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  border-radius: 10px;
+  transition: transform 0.35s ease;
+  padding: 4px;
+  text-align: center;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.card-front {
+  background: #d6a0a0;
+  border: 1px solid #c8708a;
+  transform: translateZ(0);
+}
+
+.card-back {
+  background: #f1caa2;
+  border: 1px solid #e8b992;
+  transform: rotateY(90deg);
+}
+
+.card.flipped .card-front {
+  transform: rotateY(90deg);
+}
+
+.card.flipped .card-back {
+  transform: rotateY(0);
+}
+
+/* Buttons — emphasize Flip / Next with muted‑pink style */
+.flip-btn,
+.next-btn {
+  padding: 10px 18px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.flip-btn {
+  background: #f1caa2;
+  color: #3A3A3A;
+}
+
+.flip-btn:hover {
+  background: #e8b992;
+}
+
+.next-btn {
+  background: #d6a0a0;
+  color: #3A3A3A;
+}
+
+.next-btn:hover {
+  background: #c8708a;
+}

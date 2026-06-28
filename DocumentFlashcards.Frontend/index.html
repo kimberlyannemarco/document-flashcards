@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>QuizBot: PDF → Flashcards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>QuizBot: PDF → AI Flashcards</h1>
+
+    <section class="upload-section">
+      <h2>Upload a PDF</h2>
+      <input type="file" id="document-input" accept=".pdf" />
+      <button id="generate-btn">Generate Flashcards</button>
+      <div id="status"></div>
+    </section>
+
+    <section class="review-section">
+      <h2>Study Mode</h2>
+      <div id="current-card" class="card">
+        <div class="card-content">
+          <div class="card-front" id="card-front">Click \"Next\" to start</div>
+          <div class="card-back" id="card-back">Answer here</div>
+        </div>
+      </div>
+      <button id="flip-btn" class="flip-btn">Flip</button>
+      <button id="next-btn" class="next-btn">Next</button>
+    </section>
+
+    <section class="cards-section">
+      <h2>Generated Flashcards</h2>
+      <div id="cards-list"></div>
+    </section>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

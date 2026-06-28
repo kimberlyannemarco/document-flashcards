@@ -1,4 +1,4 @@
-git status# QuizBot: PDF → AI Flashcards
+# QuizBot: PDF → AI Flashcards
 
 QuizBot is a prototype web application that explores how AI could enhance learning workflows by allowing users to upload a PDF and study generated flashcards through an interactive interface.
 
